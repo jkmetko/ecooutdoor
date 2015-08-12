@@ -1,0 +1,23 @@
+#map{
+    height: calc(100% - 100px);
+}
+
+.info-window{
+    text-align: left;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif!important;
+}
+.info-window h2{
+    text-align: center;
+}
+
+.info-window img{
+    margin: 20px;
+}
+
+.info-window .fi{
+    display: none;
+}
+
+.info-window .btn-modal.btn-more{
+    display: none;
+}
