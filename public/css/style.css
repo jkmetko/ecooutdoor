@@ -799,7 +799,7 @@ p {
   position: relative;
   min-height: 70px;
   padding-right: 70px;
-  background: url(/images/icon-title-rocket.png) 100% 0 no-repeat;
+  background: url(/images/icon-title-rocket.png) right bottom no-repeat;
   margin-top: -7px;
   margin-bottom: 42px;
 }
@@ -808,7 +808,7 @@ p {
   min-height: 70px;
   position: relative;
 }
-.title-with-icon h3:before {
+.title-with-icon:after {
   content: "";
   display: block;
   position: absolute;
@@ -7610,21 +7610,24 @@ img.mfp-img {
   .static-header__rocket {
     display: block;
     position: absolute;
-    right: 0px;
+    right: 160px;
     top: 50px;
     z-index: 0;
+      width: 400px;
   }
 }
 @media (min-width: 992px) {
   .static-header__rocket {
-    right: 0px;
-    top: 60px;
+      right: 180px;
+      top: 60px;
+      width: 520px;
   }
 }
 @media (min-width: 1200px) {
   .static-header__rocket {
-    right: 0px;
-    top: 0px;
+      right: 180px;
+      top: 0px;
+      width: 820px;
   }
 }
 .static-header__rocket img {
