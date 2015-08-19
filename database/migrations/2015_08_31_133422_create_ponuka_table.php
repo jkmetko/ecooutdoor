@@ -19,8 +19,8 @@ class CreatePonukaTable extends Migration
             $table->string('title', 128);
             $table->string('sub_title', 128);
             $table->string('icon', 128);
-            $table->string('description');
-            $table->string('text');
+            $table->longText('description');
+            $table->longText('text');
 
             $table->timestamps();
             $table->softDeletes();

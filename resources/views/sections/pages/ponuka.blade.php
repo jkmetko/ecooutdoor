@@ -12,11 +12,11 @@
 
             @foreach($ponuka as $index => $sluzba)
                 <!-- Panel #{{ $index }} -->
-                <div class="panel panel-default">
+                <div class="panel panel-default service">
                     <!-- Panel Heading -->
                     <div class="panel-heading" role="tab" id="heading4-{{ $index }}">
                         <div class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion4" href="#collapse4-{{ $index }}" aria-expanded="false" aria-controls="collapse4-{{ $index }}">
+                            <div class="service-wrapper">
                                 <div class="row">
                                     <div class="col-md-2 col-sm-1 col-xs-1 panel-title__number">0{{ $index+1 }}</div>
                                     <div class="col-md-3 col-sm-8 col-xs-9 panel-title__heading">
@@ -39,15 +39,19 @@
                                     <div class="col-md-3 col-xs-12 panel-title__desc">
                                         <div class="v-center">
                                             <div class="v-center-inner">
-                                                {!! $sluzba->description !!}
+                                                <p>
+                                                    {!! $sluzba->description !!}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-2 panel-title__close">
-                                        <span class="panel-icon"></span>
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapse4-{{ $index }}" aria-expanded="false" aria-controls="collapse4-{{ $index }}">
+                                            <span class="panel-icon"></span>
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Panel Heading / End -->
@@ -56,9 +60,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
-                                    <p>
-                                        {!! $sluzba->text !!}
-                                    </p>
+                                    {!! $sluzba->text !!}
                                 </div>
                             </div>
                         </div>
@@ -70,6 +72,5 @@
 
         </div>
         <!-- Accordion (Features) / End -->
-
     </div>
 </section>

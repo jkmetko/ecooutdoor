@@ -25,10 +25,10 @@
                         <h3>{{ $onas->title }}</h3>
                     </div>
                     <p>
-                        {!! $onas->text !!}
+                        {!! nl2br($onas->text) !!}
                     </p>
                     <blockquote class="text-right">
-                        <p>"{!! $onas->quote !!}"</p>
+                        <p>"{!! nl2br($onas->quote) !!}"</p>
                         <cite>ECOOUTDOOR</cite>
                     </blockquote>
                 </div>

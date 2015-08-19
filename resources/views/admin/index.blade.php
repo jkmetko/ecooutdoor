@@ -6,7 +6,9 @@
     @include('sections.forms.o_nas')
 
     <!-- Page Section (Team) -->
-    @include('sections.forms.team')
+    <div style="display: none">
+        @include('sections.forms.team')
+    </div>
 
     <!-- Page Section (Features) -->
     @include('sections.forms.ponuka')
